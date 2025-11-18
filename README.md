@@ -12,8 +12,8 @@ Deploy Application Files:Download the SLBS ZIP file.
 Extract the contents of this ZIP file directly into the htdocs folder located within your XAMPP installation directory (e.g., C:\xampp\htdocs).
 Ensure the extracted folder is named slbs.
 Accessing the Web PageOnce the files are extracted,
-you can access the application through your web browser:Open your web browser and navigate to: http://localhost/slbs/login.
-php🔑 Default User AccountsUse the following credentials to log in for the first time:
+you can access the application through your web browser:Open your web browser and navigate to: http://localhost/slbs/login.php 🔑
+Default User AccountsUse the following credentials to log in for the first time:
 User Type Username Password Notes Superadmin username - superadmin passowrd - superadmin This user has the highest privileges,
 including the ability to modify the application license validity dates and numbers.Admin username -  admin password - admin Standard administrative user.Security 
 **Note**: It is highly recommended that you change the default passwords immediately after your first successful login
