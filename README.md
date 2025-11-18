@@ -34,7 +34,7 @@ if any helps need contact me www.smartjoans.space/joans.html
 The Smart Laboratory Billing System (SLBS) is a comprehensive, web-based management solution designed specifically for small to medium-sized pathology laboratories. It streamlines patient registration, automated billing, test result entry, and ensures accurate financial and clinical reporting.
 
 ✨ Key Features💵 Billing and FinanceDynamic Billing: Quickly generate invoices based on selected tests.Flexible Payments: Supports multiple payment methods (Cash, Card, UPI) with real-time validation to ensure the total paid amount matches the net bill.Discounts: Allows application of discounts during the billing process.Print Preview: Provides instant, print-ready invoices upon successful submission.Cancellation & Reversal: Dedicated interface to cancel bills, automatically logging the reversal for financial reconciliation.
-![Uploading image.png…]()
+
 
 🧪 Laboratory ManagementTest Management (CRUD): Complete control over adding, editing, and deleting master test profiles.Nested Parameters: Supports defining complex tests with multiple sub-tests (parameters).Detailed Parameter Setup: Each test/sub-test can be configured with specific Specimen (e.g., Blood), Container (e.g., EDTA), TAT Time, and Unit (e.g., mg/dL, $\text{g}/\text{dL}$).Report Typing: Allows classifying parameters as Numeric (with customizable decimal precision) or Text to enforce data validation during entry.Reusable Data: Enables creation of new tests by selecting existing Department, Specimen, Container, and Unit entries.
 
