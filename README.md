@@ -3,7 +3,10 @@
 This guide assumes you are setting up the Smart Laboratory Billing System (SLBS), 
 
 a basic system focused on billing and manual report entry for small-size laboratories.
-Prerequisites and SetupInstall 
+
+Before if You Need watch Demo For that Project https://smartjoans.space/projects.html
+
+**Prerequisites and SetupInstall **
 
 **XAMPP: **
 Download and install the XAMPP software suite.
