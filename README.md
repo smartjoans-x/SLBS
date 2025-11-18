@@ -1,5 +1,24 @@
-# SLBS
-Smart Laboratory Blling System
+💻 SLBS Installation Guide
+
+This guide assumes you are setting up the Smart Laboratory Billing System (SLBS), 
+
+a basic system focused on billing and manual report entry for small-size laboratories.
+Prerequisites and SetupInstall 
+
+**XAMPP: **
+Download and install the XAMPP software suite.
+Start Services: Use the XAMPP Control Panel to start the Apache web server and MySQL database services.
+Deploy Application Files:Download the SLBS ZIP file.
+Extract the contents of this ZIP file directly into the htdocs folder located within your XAMPP installation directory (e.g., C:\xampp\htdocs).
+Ensure the extracted folder is named slbs.
+Accessing the Web PageOnce the files are extracted,
+you can access the application through your web browser:Open your web browser and navigate to: http://localhost/slbs/login.
+php🔑 Default User AccountsUse the following credentials to log in for the first time:
+User Type Username Password Notes Superadmin username - superadmin passowrd - superadmin This user has the highest privileges,
+including the ability to modify the application license validity dates and numbers.Admin username -  admin password - admin Standard administrative user.Security 
+**Note**: It is highly recommended that you change the default passwords immediately after your first successful login
+
+if any helps need contact me www.smartjoans.space/joans.html
 
 🔬 SLBS: Smart Laboratory Billing System
 
