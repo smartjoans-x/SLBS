@@ -30,7 +30,7 @@ User Type Username Password Notes Superadmin username - superadmin passowrd - su
 including the ability to modify the application license validity dates and numbers.Admin username -  admin password - admin Standard administrative user.Security 
 **Note**: It is highly recommended that you change the default passwords immediately after your first successful login
 
-if any helps need contact me www.smartjoans.space/joans.html
+if any helps need contact me services.smartjoans.space
 
 🔬 SLBS: Smart Laboratory Billing System
 
