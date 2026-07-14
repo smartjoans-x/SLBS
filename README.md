@@ -4,7 +4,7 @@ This guide assumes you are setting up the Smart Laboratory Billing System (SLBS)
 
 a basic system focused on billing and manual report entry for small-size laboratories.
 
-Before if You Need watch Demo For that Project https://smartjoans.space/projects.html
+Before if You Need watch Demo For that Project https://services.smartjoans.space/projects
 
 **Prerequisites and SetupInstall **
 
