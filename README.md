@@ -1,48 +1,134 @@
-💻 SLBS Installation Guide
+<div align="center">
+  
+  <h1>🔬 SLBS</h1>
+  <p><b>Smart Laboratory Billing System for Small to Medium Pathology Labs</b></p>
+  
+  <a href="https://services.smartjoans.space/projects"><img src="https://img.shields.io/badge/View_Demo_Video-smartjoans.space-blue?style=for-the-badge&logo=youtube" alt="Demo Video"></a>
+  <a href="https://services.smartjoans.space/"><img src="https://img.shields.io/badge/Developer-smartJOANS-orange?style=for-the-badge&logo=codeigniter" alt="Developer"></a>
+  <img src="https://img.shields.io/badge/Stack-PHP_|_MySQL-success?style=for-the-badge&logo=php" alt="Stack">
+</div>
 
-This guide assumes you are setting up the Smart Laboratory Billing System (SLBS), 
+<br>
 
-a basic system focused on billing and manual report entry for small-size laboratories.
+## 📋 Project Overview
+The **Smart Laboratory Billing System (SLBS)** is a comprehensive, web-based management solution designed specifically for small to medium-sized pathology laboratories. It streamlines patient registration, automated billing, manual test result entry, and ensures accurate financial and clinical reporting.
 
-Before if You Need watch Demo For that Project https://services.smartjoans.space/projects
+🎥 **[Watch the Demo Video Here!](https://services.smartjoans.space/projects)**
 
-**Prerequisites and SetupInstall **
+---
 
-**XAMPP: **
-Download and install the XAMPP software suite.
-Start Services: Use the XAMPP Control Panel to start the Apache web server and MySQL database services.
+## ✨ Key Features
 
+### 💵 Billing and Finance
+- **Dynamic Billing:** Quickly generate invoices based on selected master tests.
+- **Flexible Payments:** Supports Cash, Card, and UPI with real-time validation ensuring paid amounts match the net bill.
+- **Discounts & Reversals:** Apply discounts during billing, and easily cancel bills (automatically logged for financial reconciliation).
+- **Print Preview:** Generate instant, print-ready invoices upon successful submission.
 
-Deploy Application Files:Download the SLBS ZIP file.
-Extract the contents of this ZIP file directly into the htdocs folder located within your XAMPP installation directory (e.g., C:\xampp\htdocs).
-Ensure the extracted folder is named slbs.
-Accessing the Web PageOnce the files are extracted,
+### 🧪 Laboratory Management
+- **Test Management (CRUD):** Complete control over adding, editing, and deleting master test profiles.
+- **Nested Parameters:** Define complex tests with multiple sub-tests (e.g., HB under CBC).
+- **Detailed Setup:** Configure specific Specimen, Container, TAT Time, and Units for every test.
+- **Report Typing:** Classify parameters as *Numeric* (with customizable decimals) or *Text* to enforce strict data validation.
 
-Import the Database stucture the filegiven with database folder smartjoa_demo.sql import that with PHPmyAdmin sql page you can create database name is your wish after that you must change db_connect.php page details as per your database name and password ,
+### 📊 Reporting and Access Control
+- **Granular Result Entry:** Dynamic input fields automatically render based on the tests billed to the patient.
+- **Abnormal Highlighting:** Automatically bolds and colors results falling outside configured Reference Ranges.
+- **Reference Range Management:** Set multiple age- and sex-specific normal ranges for every parameter.
+- **Smart Printing:** Print reports with or without company letterheads (adds a 2-inch top margin for pre-printed paper).
+- **Patient History:** Quick lookup tool for viewing a patient's entire billing history and report status.
 
+---
 
+## 🛠️ Installation and Setup Guide
 
-you can access the application through your web browser:Open your web browser and navigate to: http://localhost/slbs/login.php 
+Follow these steps to deploy SLBS on your local XAMPP environment.
 
-🔑
-Default User AccountsUse the following credentials to log in for the first time:
-User Type Username Password Notes Superadmin username - superadmin passowrd - superadmin This user has the highest privileges,
-including the ability to modify the application license validity dates and numbers.Admin username -  admin password - admin Standard administrative user.Security 
-**Note**: It is highly recommended that you change the default passwords immediately after your first successful login
+<details>
+<summary><b>1️⃣ System Prerequisites</b></summary>
+<br>
 
-if any helps need contact me services.smartjoans.space
+- **XAMPP:** Download and install the XAMPP software suite.
+- **Start Services:** Open the XAMPP Control Panel and start the **Apache** and **MySQL** services.
+</details>
 
-🔬 SLBS: Smart Laboratory Billing System
+<details>
+<summary><b>2️⃣ Database Configuration</b></summary>
+<br>
 
-The Smart Laboratory Billing System (SLBS) is a comprehensive, web-based management solution designed specifically for small to medium-sized pathology laboratories. It streamlines patient registration, automated billing, test result entry, and ensures accurate financial and clinical reporting.
+1. Open your browser and navigate to `http://localhost/phpmyadmin`.
+2. Create a new database (you can choose any name).
+3. Locate the `smartjoa_demo.sql` file provided inside the `database` folder of this repository.
+4. Import this `.sql` file into your newly created database.
+</details>
 
-✨ Key Features💵 Billing and FinanceDynamic Billing: Quickly generate invoices based on selected tests.Flexible Payments: Supports multiple payment methods (Cash, Card, UPI) with real-time validation to ensure the total paid amount matches the net bill.Discounts: Allows application of discounts during the billing process.Print Preview: Provides instant, print-ready invoices upon successful submission.Cancellation & Reversal: Dedicated interface to cancel bills, automatically logging the reversal for financial reconciliation.
+<details>
+<summary><b>3️⃣ Deploy Application Files</b></summary>
+<br>
 
+1. Extract the downloaded SLBS ZIP file.
+2. Copy the extracted folder into the `htdocs` directory of your XAMPP installation (e.g., `C:\xampp\htdocs\slbs`). *Ensure the folder name is exactly `slbs` if you want to use default URLs.*
+3. Open `db_connect.php` in your code editor and update the database name, username, and password to match your local setup.
+4. Open your web browser and navigate to: `http://localhost/slbs/login.php`
+</details>
 
-🧪 Laboratory ManagementTest Management (CRUD): Complete control over adding, editing, and deleting master test profiles.Nested Parameters: Supports defining complex tests with multiple sub-tests (parameters).Detailed Parameter Setup: Each test/sub-test can be configured with specific Specimen (e.g., Blood), Container (e.g., EDTA), TAT Time, and Unit (e.g., mg/dL, $\text{g}/\text{dL}$).Report Typing: Allows classifying parameters as Numeric (with customizable decimal precision) or Text to enforce data validation during entry.Reusable Data: Enables creation of new tests by selecting existing Department, Specimen, Container, and Unit entries.
+---
 
-📊 Reporting and Access ControlGranular Result Entry: Dedicated interface for lab technicians to input results, with fields dynamically rendered based on the tests billed to the patient.Abnormal Value Highlighting: Automatically bolds and colors results that fall outside the configured Reference Ranges (Normal Values).Reference Range Management: Allows setting multiple, age- and sex-specific normal ranges for every parameter (main test or sub-test).Print Options: Provides options for printing reports with or without the company letterhead (adding 2 inches of top margin for pre-printed paper).Patient History: Quick lookup tool to view a patient's entire billing history and check the report status (Pending/Ready) for each test.💻 Technical StackSLBS is built on a reliable, standard LAMP stack environment.ComponentTechnologyRoleBackend LogicPHP 7.4+ (Procedural)Handles all business logic, data processing, and security.DatabaseMySQL / MariaDBStores all patient, billing, test, and results data.Frontend/UIHTML5 / CSS3 / JavaScript / jQueryProvides the user interface, dynamic form manipulation (AJAX search, dynamic payments), and input validation.DeploymentcPanel / Shared HostingStandard hosting environment compatibility.SecurityPrepared Statements (MySQLi)Used throughout the application to prevent SQL Injection (SQLi) attacks.
+## 🔐 Default User Accounts
 
-⚙️ Data Model StructureThe system relies on a linked data model to ensure data integrity (using Foreign Key constraints).Table NamePurposeKey RelationstestsMaster definitions for tests (Price, Unit, Report Type, Decimals).-sub_testsSpecific parameters nested under main tests (e.g., HB under CBC).test_id (FK)ref_rangesStores age/sex-specific normal values for parameters.test_id (FK), sub_test_id (FK, ON DELETE SET NULL)patientsPatient demographic data.-billingMaster invoice record (amounts, dates, status).pt_id (FK)bill_testsLinks tests to a specific invoice (tracks cost).bill_id, test_id (FKs)reportsStores finalized test results and the specific range used.bill_id, test_id, range_id (FKs, sub_test_id nullable)roles / permissions / role_permissionsDefines granular access levels (Superadmin, Admin, Receptionist, Accounts).-licenceStores the licence key and expiration date (enforced at login).-
+Use the following credentials to log in for the first time. 
 
-🛡️ Security and Access ControlThe system implements strict Role-Based Access Control (RBAC):Authorization: Access to every page is controlled by the check_permission() function, verifying the user's role against required permissions (e.g., access_billing, manage_tests).Superadmin Bypass: The Superadmin (Role ID 1) is granted login access even if the main license key is expired, ensuring system administration can always be performed.Hierarchy Guardrail: Only the Superadmin can create or modify the Superadmin role's permissions.Database Security: All data submission and retrieval use MySQLi Prepared Statements to prevent injection vulnerabilities.
+| User Type | Username | Password | Notes |
+| :--- | :--- | :--- | :--- |
+| **Superadmin** | `superadmin` | `superadmin` | Highest privileges. Can modify application license validity dates and numbers. |
+| **Admin** | `admin` | `admin` | Standard administrative user. |
+
+> ⚠️ **SECURITY NOTE:** It is highly recommended that you change the default passwords immediately after your first successful login!
+
+---
+
+## 💻 Technical Stack
+
+SLBS is built on a reliable, standard LAMP stack environment, ensuring compatibility with cPanel and Shared Hosting environments.
+
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Backend Logic** | PHP 7.4+ (Procedural) | Handles all business logic, data processing, and security. |
+| **Database** | MySQL / MariaDB | Stores all patient, billing, test, and results data. |
+| **Frontend / UI** | HTML5 / CSS3 / JS / jQuery | User interface, dynamic forms (AJAX search), and input validation. |
+| **Security** | Prepared Statements | Uses MySQLi Prepared Statements to prevent SQLi attacks. |
+
+---
+
+## ⚙️ Data Model Structure
+
+The system relies on a tightly linked relational data model using Foreign Key constraints to ensure data integrity.
+
+| Table Name | Purpose | Key Relations |
+| :--- | :--- | :--- |
+| `tests` | Master definitions for tests (Price, Unit, Report Type). | - |
+| `sub_tests` | Specific parameters nested under main tests. | `test_id` (FK) |
+| `ref_ranges` | Age/sex-specific normal values for parameters. | `test_id` (FK), `sub_test_id` (FK) |
+| `patients` | Patient demographic data. | - |
+| `billing` | Master invoice record (amounts, dates, status). | `pt_id` (FK) |
+| `bill_tests` | Links tests to a specific invoice (tracks cost). | `bill_id`, `test_id` (FKs) |
+| `reports` | Finalized test results and the specific range used. | `bill_id`, `test_id`, `range_id` (FKs) |
+| `roles / permissions`| Defines granular access levels (Superadmin, Admin, etc.). | - |
+| `licence` | Stores the licence key and expiration date. | Enforced at login. |
+
+---
+
+## 🛡️ Security and Access Control
+
+- **Role-Based Access Control (RBAC):** Access to every page is strictly controlled by the `check_permission()` function, verifying the user's role against required permissions.
+- **Superadmin Bypass:** The Superadmin (Role ID 1) retains login access even if the main license key expires, ensuring emergency system administration is always possible.
+- **Hierarchy Guardrail:** Only the Superadmin account can create or modify the Superadmin role's permissions.
+- **Database Security:** All data submission and retrieval utilize MySQLi Prepared Statements to prevent SQL injection vulnerabilities.
+
+---
+
+## 📞 Support & Contact
+
+If you need any help with installation, custom modifications, or support, feel free to reach out.
+
+🌐 **Website:** [services.smartjoans.space](https://services.smartjoans.space)
