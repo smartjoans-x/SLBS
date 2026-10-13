@@ -2,7 +2,7 @@
 // Define configuration details
 define('DB_SERVER', 'localhost'); 
 define('DB_USERNAME', 'smartjoa_demo');
-define('DB_PASSWORD', 'Mrsmjo@17'); // Ensure this is correct
+define('DB_PASSWORD', 'password'); // Ensure this is correct
 define('DB_NAME', 'smartjoa_demo');
 
 // Attempt to establish connection
